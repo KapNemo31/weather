@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="flex">
+                <div class="h1">
+                    <h1>WITCH WEATHER</h1>
+                </div>
+
+                <div class="main flex weatherContainer">
+                    <div class="city flex">
+                        <p class="weatherInCity"></p>
+                        <img class="arrow" src="/img/arrow.svg" alt="">
+                    </div>
+                    <div class="temp">
+                        <p class="temperatureValue"></p>
+                    </div>
+                    <div class="change">
+                        <button id="changeCityButton" class="btn">Сменить город</button>
+                    </div>
+                </div>
+
+
+
+                <div class="cityContainer search">
+                    <div class="inputToFindCityBox">
+                        <input class="inputToFindCity" id="inputToFindCity" type="text"
+                            placeholder="Напишите ваш город">
+                    </div>
+                    <button id="findCityButton" class="btn" id="">Искать</button>
+
+
+                </div>
+
+
+                <div class="errorContainer">
+                    <p>Ooops. Something went wrong.</p>
+                    <button id="tryAgainButton">Try again</button>
+                </div>
+
+                <p class="foot">@KapNemo31 - GitHub</p>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    <script type="application/javascript" src="https://api.ipify.org"></script>
+
+</body>
+
+</html>
